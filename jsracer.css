@@ -1,0 +1,94 @@
+body {
+  font-family: sans-serif;
+  background-color: #D62728;
+  background-image: url(http://clients.stujophoto.com/photos/i-6JGC9Pj/3/L/i-6JGC9Pj-L.jpg);
+  background-size: 100%;
+}
+.heading {
+  font-size: 1.5em;
+  border-bottom: 1px solid #333;
+}
+.container {
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+#racer_table {
+  border: 2px solid black;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+}
+
+#board_container.complete #racer_table {
+  border: 2px solid lightgreen;
+  opacity: 0.8;
+}
+#racer_table tr {
+  height: 1em;
+}
+#racer_table td {
+  border: 1px solid #999;
+  opacity: 0.5;
+}
+#racer_table td.active {
+  opacity: 1.0;
+  border: 1px solid #333;
+}
+#player2_strip td.active {
+  background-color: green;
+}
+#player3_strip td.active {
+  background-color: yellow;
+}
+#board_placeholder {
+  min-height: 100px;
+}
+#board_controls {
+  width: 100%;
+  margin: 10px;
+}
+
+#board_container #start_button {
+  position: absolute;
+  left: 100px;
+  top: 90px;
+}
+
+#board_container.running #start_button {
+  display: none;
+}
+
+
+#board_controls button{
+  font-size: 2em;
+  border-radius: 5px;
+}
+
+#history_controls {
+  width: 100%;
+}
+#history_controls td {
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+}
+.pie_chart {
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+}
+#history_container {
+  min-height: 225px;
+}
+#history_container div {
+  padding-top: 10px;
+}
+#distribution_container {
+  min-height: 225px;
+  text-align: center;
+}

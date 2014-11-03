@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="jsracer.css">
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div id="board_container">
+      <div class="heading">JavaScript Racer</div>
+      <div id="board_placeholder"></div>
+      <table id="board_controls">
+        <tr>
+          <td>
+            <button id="start_button">Start</button>
+          </td>
+          <td>
+            <span id="turn_display"></span>
+            <span id="status_bar">Press Start to Race!</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <table id="history_controls">
+    <tr>
+      <td>
+        <div class="container">
+          <div class="heading">Win Distribution</div>
+          <div id="distribution_container">
+            <svg class="pie_chart"></svg>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="container">
+          <div class="heading">Race History</div>
+          <div id="history_container"></div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+</body>
+<script src="race_model.js"></script>
+<script src="graph_view.js"></script>
+<script src="history_view.js"></script>
+<script src="board_view.js"></script>
+<script src="app.js"></script>
+
+<script>
+window.addEventListener("load", function() {
+  var app = new App(10, 30);
+  app.run();
+});
+</script>
+
+</html>
